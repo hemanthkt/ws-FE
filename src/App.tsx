@@ -18,6 +18,8 @@ function App() {
     setSocket(ws);
 
     ws.onmessage = (e) => {
+      console.log(e);
+
       alert(e.data);
     };
   }, []);
